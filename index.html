@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Metrograd online map</title>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <link rel="stylesheet" href="js/bootstrap.min.css" />
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="js/ol.css" type="text/css" />
+    <script src="js/ol.js"></script>
+    <link rel="stylesheet" href="js/bootstrap-tour.min.css" />
+    <script src="js/bootstrap-tour.min.js"></script>
+    <link rel="stylesheet" href="mcpe_viz.css" type="text/css" />
+    <script src="mcpe_viz.js"></script>
+    <script src="20170312.js"></script>
+<script src="20170312.geojson"></script>
+  </head>
+  <body>
+    <div class="container-fluid" data-role="content">
+      <div class="row-fluid">
+	<div class="span12">
+	  <div id="map" class="map"></div>
+	</div>
+      </div>
+    </div>
+
+    <div class="navbar navbar-inverse navbar-fixed-bottom" data-role="navbar">
+      <div class="container-fluid">
+
+
+    <div class="hide">
+      <div id="popover" class="mypopover"></div>
+    </div>
+
+    <div id="throbber" class="ui-corner-all" style="display:none;">
+      <div id="throbber-content">
+	<div class="throbber-image"><b>Loading...</b><br/><span id="throbber-msg"></span></div>
+      </div>
+    </div>
+
+    <div class="modal fade" style="display;none;">
+      <div class="modal-dialog">
+	<div class="modal-content">
+	  <div class="modal-header">
+	    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	    <h4 class="modal-title"></h4>
+	  </div>
+	  <div class="modal-body">
+	  </div>
+	  <div class="modal-footer">
+	    <button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+	  </div>
+	</div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    
+  </body>
+</html>
